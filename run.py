@@ -139,8 +139,15 @@ HANGMAN_LEVELS = [
   |             |
   |            / \            
   |
-  |     G A M E  O V E R !
+  |     G A M E  O V E R!
   |
 =====
 """
 ]
+
+words = ["orange", "weakness", "improvement", "tradition", "television",
+       "friendship", "argument", "consequence", "replacement", "teacher",
+       "software", "energy", "alcohol", "employer", "reaction", "airport",
+       "strategy", "teaching", "leadership", "system", "perception",
+       "description", "efficiency", "literature", "assignment", "speech",
+       "painting", "initiative", "committee", "proposal"]
