@@ -191,6 +191,9 @@ def validate_data(chosen_word):
     Takes in user's guess. Validates data from the input and ensures
     that the user enters one letter at each guess.
     Tells the user whether the guessed letter is in the word or not.
+    Prints out the next hangman_level and counts down the number of attempts
+    for each guess that is not correct.
+    Tells user the word when all the attempts are used. 
     """
     guess = None
     max_attempts = 9
