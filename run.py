@@ -2,6 +2,16 @@ import random
 
 from hangman import HANGMAN_LEVELS
 
+print("============================================================\n"
+       "Welcome to the Hangman game! The game involves guessing\n" 
+       "letters in a word. Letters are initially completely hidden\n" 
+       "but are shown as clues when you successfully guess them.\n" 
+                       "\n"
+       "        1.You will play with random words\n"
+       "        2.You will have 9 attempts\n"
+       "        3.You can play several times\n"
+      "============================================================\n")
+
 def get_user_info():
     """
     Gives a user the opportunity to enter a username. 
@@ -129,7 +139,6 @@ def main():
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
-
 
 
 main()
