@@ -1,5 +1,7 @@
 import random
 
+from hangman import HANGMAN_LEVELS
+
 def get_user_info():
     """
     Gives a user the opportunity to enter a username. 
@@ -17,7 +19,7 @@ def get_user_info():
             exit()
         elif user_choice.lower() == "yes":
             print("\nLet's go then...")
-            break 
+            break
         else:
             print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
             user_choice = input("yes / no: ")
@@ -26,126 +28,6 @@ def get_user_info():
 
 get_user_info()
 
-
-HANGMAN_LEVELS = [ 
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             
-  |            
-  |            
-  |             
-  |                       
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             
-  |            
-  |             
-  |                    
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            
-  |             
-  |                       
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |             |
-  |             
-  |                      
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            \|
-  |             
-  |                        
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            \|/
-  |             
-  |                      
-  |
-  |     
-  |
-=====
-""",
-""" 
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            \|/
-  |             |
-  |                      
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            \|/
-  |             |
-  |            /             
-  |
-  |     
-  |
-=====
-""",
-"""
-  _ _ _ _ _ _ _ _
-  |             |
-  |             |
-  |             O
-  |            \|/
-  |             |
-  |            / \            
-  |
-  |     G A M E  O V E R!
-  |
-=====
-"""
-]
 
 words = ["orange", "weakness", "improvement", "tradition", "television",
        "friendship", "argument", "consequence", "replacement", "teacher",
