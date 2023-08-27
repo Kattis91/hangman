@@ -173,11 +173,12 @@ def start_game(chosen_word):
     """
     hidden_word = ['_' for i in range(len(chosen_word))]
     print(' '.join(hidden_word))
+    print(chosen_word)
 
 
 def check(chosen_word, guess):
     """
-    Checks if the letter guessed by the user is in the word.
+    Checks whether the letter guessed by the user is in the word.
     Returns true if the letter is in the word, returns false if it is not
     """
     if guess in chosen_word:
@@ -187,10 +188,27 @@ def check(chosen_word, guess):
 
 def validate_data(chosen_word):
     """
-    Takes in users guess...
+    Takes in user's guess. Validates data from the input and ensures
+    that the user enters one letter at a time.
+    Tells the user whether the guessed letter is in the word or not.
     """
-    guess = input("\nEnter a letter: ").lower()
-    result = check(chosen_word, guess)
+    guess = None
+    max_attempts = 9
+    game_over = False
+
+    while not game_over:
+        guess = input("\nEnter a letter: ").lower()
+
+        if len(guess) == 1 and guess.isalpha():
+            result = check(chosen_word, guess)
+            if result:
+                print(f"Yes, {guess} is in the word!")
+            else:
+                print(f"\nThe letter {guess} is not in the word.")
+        else:
+            print("You need to enter A LETTER. ")
+        
+    return show_game_over(chosen_word) if game_over else guess
 
 
 chosen_word = get_word()
