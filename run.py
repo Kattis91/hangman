@@ -14,13 +14,15 @@ def get_user_info():
         if user_choice.lower() == "no":
             print("\nYou are welcome back another time. Have a nice day!")
             break
+            exit()
         elif user_choice.lower() == "yes":
             print("\nLet's go then...")
-            break
+            break 
         else:
             print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
             user_choice = input("yes / no: ")
             continue   
+
 
 get_user_info()
 
@@ -83,7 +85,7 @@ HANGMAN_LEVELS = [
   |             |
   |             |
   |             O
-  |            /|
+  |            \|
   |             
   |                        
   |
@@ -96,7 +98,7 @@ HANGMAN_LEVELS = [
   |             |
   |             |
   |             O
-  |            /|\
+  |            \|/
   |             
   |                      
   |
@@ -109,7 +111,7 @@ HANGMAN_LEVELS = [
   |             |
   |             |
   |             O
-  |            /|\
+  |            \|/
   |             |
   |                      
   |
@@ -122,7 +124,7 @@ HANGMAN_LEVELS = [
   |             |
   |             |
   |             O
-  |            /|\
+  |            \|/
   |             |
   |            /             
   |
@@ -135,7 +137,7 @@ HANGMAN_LEVELS = [
   |             |
   |             |
   |             O
-  |            /|\
+  |            \|/
   |             |
   |            / \            
   |
@@ -151,3 +153,13 @@ words = ["orange", "weakness", "improvement", "tradition", "television",
        "strategy", "teaching", "leadership", "system", "perception",
        "description", "efficiency", "literature", "assignment", "speech",
        "painting", "initiative", "committee", "proposal"]
+
+
+def get_word():
+    """
+    Gets and returns a random word from the words list
+    """
+    return random.choice(words)
+
+
+chosen_word = get_word()
