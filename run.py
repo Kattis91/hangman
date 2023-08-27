@@ -98,15 +98,28 @@ def validate_data(chosen_word):
         else:
             print("You need to enter A LETTER. ")
         
-    return show_game_over(chosen_word) if game_over else guess
+    return show_game_over() if game_over else guess
 
 
-def show_game_over(chosen_word):
+def show_game_over():
     """
-    Asks if user wants to play again. 
+    Asks if user wants to play again.
     Takes over only when game_over is True
     """
     play_again = input("Would you like to play again?")
+    while True:
+        if play_again == "yes":
+            main()
+            break
+        elif play_again == "no":
+            print("Welcome back another time!")
+            break
+            exit()   
+        else:
+            print("Was it 'yes' or 'no'?")
+            play_again = input("Would you like to play again?")
+            continue
+
 
 
 def main():
@@ -116,6 +129,7 @@ def main():
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
+
 
 
 main()
