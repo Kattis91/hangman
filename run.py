@@ -101,6 +101,7 @@ def validate_data(chosen_word):
             else:
                 print(f"\nThe letter {guess} is not in the word.")
                 max_attempts -= 1
+                print(f"\nYou have {max_attempts} attempts left")
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
