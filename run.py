@@ -175,11 +175,22 @@ def start_game(chosen_word):
     print(' '.join(hidden_word))
 
 
+def check(chosen_word, guess):
+    """
+    Checks if the letter guessed by the user is in the word.
+    Returns true if the letter is in the word, returns false if it is not
+    """
+    if guess in chosen_word:
+        return True
+    return False
+
+
 def validate_data(chosen_word):
     """
     Takes in users guess...
     """
     guess = input("\nEnter a letter: ").lower()
+    result = check(chosen_word, guess)
 
 
 chosen_word = get_word()
