@@ -226,7 +226,15 @@ def show_game_over(chosen_word):
     """
     play_again = input("Would you like to play again?")
 
-chosen_word = get_word()
-start_game(chosen_word)
-validate_data(chosen_word)
+
+def main():
+    """
+    Runs all program functions
+    """
+    chosen_word = get_word()
+    start_game(chosen_word)
+    validate_data(chosen_word)
+
+
+main()
 
