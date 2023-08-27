@@ -165,4 +165,15 @@ def get_word():
 print("\nThe game now begins...3...2...1")
 print(HANGMAN_LEVELS[0])
 
+
+def start_game(chosen_word):
+    """
+    Hides the word and shows it with the help of dashes.
+    One dash for each letter in the word
+    """
+    hidden_word = ['_' for i in range(len(chosen_word))]
+    print(' '.join(hidden_word))
+   
+
 chosen_word = get_word()
+start_game(chosen_word)
