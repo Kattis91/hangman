@@ -162,4 +162,7 @@ def get_word():
     return random.choice(words)
 
 
+print("\nThe game now begins...3...2...1")
+print(HANGMAN_LEVELS[0])
+
 chosen_word = get_word()
