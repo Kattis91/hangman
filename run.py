@@ -189,7 +189,7 @@ def check(chosen_word, guess):
 def validate_data(chosen_word):
     """
     Takes in user's guess. Validates data from the input and ensures
-    that the user enters one letter at a time.
+    that the user enters one letter at each guess.
     Tells the user whether the guessed letter is in the word or not.
     """
     guess = None
@@ -205,11 +205,23 @@ def validate_data(chosen_word):
                 print(f"Yes, {guess} is in the word!")
             else:
                 print(f"\nThe letter {guess} is not in the word.")
+                max_attempts -= 1
+                print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
+                if max_attempts == 0:
+                    print(f"The word is {chosen_word}\n")
+                    game_over = True
         else:
             print("You need to enter A LETTER. ")
         
     return show_game_over(chosen_word) if game_over else guess
 
+
+def show_game_over(chosen_word):
+    """
+    Asks if user wants to play again. 
+    Takes over only when game_over is True
+    """
+    play_again = input("Would you like to play again?")
 
 chosen_word = get_word()
 start_game(chosen_word)
