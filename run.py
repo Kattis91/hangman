@@ -173,7 +173,16 @@ def start_game(chosen_word):
     """
     hidden_word = ['_' for i in range(len(chosen_word))]
     print(' '.join(hidden_word))
-   
+
+
+def validate_data(chosen_word):
+    """
+    Takes in users guess...
+    """
+    guess = input("\nEnter a letter: ").lower()
+
 
 chosen_word = get_word()
 start_game(chosen_word)
+validate_data(chosen_word)
+
