@@ -79,6 +79,8 @@ def check(chosen_word, guess):
 
 
 already_guessed = []
+already_shown = []
+
 
 def validate_data(chosen_word):
     """
@@ -105,6 +107,7 @@ def validate_data(chosen_word):
             elif result:
                 print(f"Yes, {guess} is in the word!")
                 already_guessed.append(guess)
+                already_shown.append(guess)
             else:
                 print(f"\nThe letter {guess} is not in the word.")
                 already_guessed.append(guess)
@@ -113,11 +116,24 @@ def validate_data(chosen_word):
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
-                    game_over = True
+                    game_over = True    
         else:
             print("You need to enter A LETTER. ")
         
+        show_the_letter(chosen_word)
+             
     return show_game_over() if game_over else guess
+
+
+def show_the_letter(chosen_word):
+    """
+    Replaces underscores with letters when user guesses correct
+    """
+    for letter in chosen_word:
+        if letter in already_shown:
+            print(letter, end=" ")
+        else:
+            print("_", end=" ")
 
 
 def show_game_over():
@@ -147,6 +163,6 @@ def main():
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
-
+ 
 main()
 
