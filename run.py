@@ -2,6 +2,7 @@ import random
 
 from hangman import HANGMAN_LEVELS
 
+from words import words
 
 print("============================================================\n"
        "Welcome to the Hangman game! The game involves guessing\n" 
