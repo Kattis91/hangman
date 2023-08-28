@@ -40,14 +40,6 @@ def get_user_info():
 get_user_info()
 
 
-words = ["orange", "weakness", "improvement", "tradition", "television",
-       "friendship", "argument", "consequence", "replacement", "teacher",
-       "software", "energy", "alcohol", "employer", "reaction", "airport",
-       "strategy", "teaching", "leadership", "system", "perception",
-       "description", "efficiency", "literature", "assignment", "speech",
-       "painting", "initiative", "committee", "proposal"]
-
-
 def get_word():
     """
     Gets and returns a random word from the words list
