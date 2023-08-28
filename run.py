@@ -78,10 +78,14 @@ def check(chosen_word, guess):
     return False
 
 
+already_guessed = []
+
 def validate_data(chosen_word):
     """
     Takes in user's guess. Validates data from the input and ensures
     that the user enters one letter at each guess.
+    Checks if the letter was already guessed, and if it is,
+    asks user for a new letter. Puts all new guesses in a list.
     Tells the user whether the guessed letter is in the word or not.
     Prints out the next hangman_level and counts down the number of attempts
     for each guess that is not correct.
@@ -90,16 +94,20 @@ def validate_data(chosen_word):
     guess = None
     max_attempts = 9
     game_over = False
-
+       
     while not game_over:
         guess = input("\nEnter a letter: ").lower()
 
         if len(guess) == 1 and guess.isalpha():
             result = check(chosen_word, guess)
-            if result:
+            if guess in already_guessed:
+                print(f"You have alredy guessed {guess}. Try again!")
+            elif result:
                 print(f"Yes, {guess} is in the word!")
+                already_guessed.append(guess)
             else:
                 print(f"\nThe letter {guess} is not in the word.")
+                already_guessed.append(guess)
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
@@ -132,7 +140,6 @@ def show_game_over():
             continue
 
 
-
 def main():
     """
     Runs all program functions
@@ -140,7 +147,6 @@ def main():
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
-
 
 main()
 
