@@ -2,8 +2,6 @@ import random
 
 from hangman import HANGMAN_LEVELS
 
-from words import words
-
 
 print("============================================================\n"
        "Welcome to the Hangman game! The game involves guessing\n" 
@@ -111,9 +109,9 @@ def validate_data(chosen_word):
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
-                    game_over = True    
+                    game_over = True   
         else:
-            print("You need to enter A LETTER. ")
+            print("\nYou need to enter A LETTER. ")
         
         show_the_letter(chosen_word)
              
@@ -136,13 +134,13 @@ def show_game_over():
     Asks if user wants to play again.
     Takes over only when game_over is True
     """
-    play_again = input("Would you like to play again?")
+    play_again = input("\n\nWould you like to play again?")
     while True:
         if play_again == "yes":
             main()
             break
         elif play_again == "no":
-            print("Welcome back another time!")
+            print("\nWelcome back another time!")
             break
             exit()   
         else:
