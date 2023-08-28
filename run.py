@@ -2,6 +2,7 @@ import random
 
 from hangman import HANGMAN_LEVELS
 
+
 print("============================================================\n"
        "Welcome to the Hangman game! The game involves guessing\n" 
        "letters in a word. Letters are initially completely hidden\n" 
@@ -25,8 +26,8 @@ def get_user_info():
     while True:
         if user_choice.lower() == "no":
             print("\nYou are welcome back another time. Have a nice day!")
+            quit()
             break
-            exit()
         elif user_choice.lower() == "yes":
             print("\nLet's go then...")
             break
