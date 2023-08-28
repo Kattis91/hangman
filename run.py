@@ -2,6 +2,8 @@ import random
 
 from hangman import HANGMAN_LEVELS
 
+from words import words
+
 
 print("============================================================\n"
        "Welcome to the Hangman game! The game involves guessing\n" 
@@ -91,14 +93,14 @@ def validate_data(chosen_word):
     game_over = False
        
     while not game_over:
-        guess = input("\nEnter a letter: ").lower()
+        guess = input("\n\nEnter a letter: ").lower()
 
         if len(guess) == 1 and guess.isalpha():
             result = check(chosen_word, guess)
             if guess in already_guessed:
-                print(f"You have alredy guessed {guess}. Try again!")
+                print(f"\nYou have alredy guessed {guess}. Try again!\n")
             elif result:
-                print(f"Yes, {guess} is in the word!")
+                print(f"\nYes, {guess} is in the word!")
                 already_guessed.append(guess)
                 already_shown.append(guess)
             else:
