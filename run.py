@@ -36,13 +36,11 @@ def validate_username():
 validate_username()
 
 
-def get_user_info():
+def get_user_choice():
     """
-    Gives a user the opportunity to enter a username.
     Runs a while loop to collect data from the user, which must be yes or no.
     The loop will repeatedly request data until we get yes or no.
-    """
-            
+    """      
     user_choice = input("yes / no: ")
 
     while True:
@@ -50,16 +48,14 @@ def get_user_info():
             print("\nYou are welcome back another time. Have a nice day!")
             quit()
             break
-        elif user_choice.lower() == "yes":
+        if user_choice.lower() == "yes":
             print("\nLet's go then...")
             break
-        else:
-            print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
-            user_choice = input("yes / no: ")
-            continue   
+        print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
+        user_choice = input("yes / no: ")
+        
 
-
-get_user_info()
+get_user_choice()
 
 
 def get_word():
