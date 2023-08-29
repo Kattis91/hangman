@@ -66,7 +66,7 @@ def get_word():
 
 
 time.sleep(1)
-print("\nThe game now begins...\n")
+print("\nThe game begins in...\n")
 time.sleep(1)
 print("3\n")
 time.sleep(1)
@@ -85,8 +85,7 @@ def start_game(chosen_word):
     hidden_word = ['_' for i in range(len(chosen_word))]
     time.sleep(0.7)
     print(' '.join(hidden_word))
-    print(chosen_word)
-    
+
 
 def check(chosen_word, guess):
     """
@@ -135,9 +134,9 @@ def validate_data(chosen_word):
                 print(f"\nSorry... letter {guess} is not in the word.")
                 already_guessed.append(guess)
                 max_attempts -= 1
-                time.sleep(0.7)
+                time.sleep(0.5)
                 print(f"\nYou have {max_attempts} attempts left")
-                time.sleep(1.2)
+                time.sleep(0.5)
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
@@ -179,19 +178,19 @@ def show_game_over():
     Asks if a user wants to play again.
     Takes over only when game_over is True
     """
-    play_again = input("\n\nWould you like to play again?")
+    time.sleep(1.8)
+    play_again = input("\n\nWould you like to play again?\n\n")
     while True:
         if play_again == "yes":
             main()
             break
-        elif play_again == "no":
+        if play_again == "no":
             print("\nWelcome back another time!")
             break
             exit()   
-        else:
-            print("Was it 'yes' or 'no'?")
-            play_again = input("Would you like to play again?")
-            continue
+        print("\n\nWas it 'yes' or 'no'?\n\n")
+        play_again = input("Would you like to play again?\n\n")
+        continue
 
 
 def main():
