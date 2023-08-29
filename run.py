@@ -8,14 +8,14 @@ from words import words
 
 
 print("====================================\n"
-      "Welcome to the HANGMAN game!\n\n"
-      "The game involves guessing letters\n"
-      "in a word. At the beginning of the\n"
-      "game, letters are hidden. Once\n"
-      "guessed, they are revealed in their\n"
-      "actual posititons.\n\n"
-      "1. You will have 9 attempts\n"
-      "2. You can play several times\n"
+      " Welcome to the HANGMAN game!\n\n"
+      " The game is about guessing\n"
+      " letters in a word. At the beginning\n"
+      " of the game, letters are hidden.\n"
+      " Once guessed, they are revealed\n"
+      " in their actual posititons.\n\n"
+      " 1. You will have 9 attempts\n"
+      " 2. You can play several times\n"
       "====================================\n")
 
 
