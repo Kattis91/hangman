@@ -44,11 +44,11 @@ def get_user_choice():
     user_choice = input("yes / no: ")
 
     while True:
-        if user_choice.lower() == "no":
+        if user_choice.lower().strip() == "no":
             print("\nYou are welcome back another time. Have a nice day!")
             quit()
             break
-        if user_choice.lower() == "yes":
+        if user_choice.lower().strip() == "yes":
             print("\nLet's go then...\U0001F60E")
             break
         print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
@@ -181,10 +181,10 @@ def show_game_over():
     time.sleep(1.8)
     play_again = input("\n\nWould you like to play again?\n\n")
     while True:
-        if play_again == "yes":
+        if play_again.lower().strip() == "yes":
             main()
             break
-        if play_again == "no":
+        if play_again.lower().strip() == "no":
             print("\nWelcome back another time!")
             break
             exit()   
