@@ -4,6 +4,7 @@ Hangman is a Python terminal game, which runs oin the Code Institute mock termin
 
 Users get a possibility to play a guessing game even if they do not have someone around to play with.
 
+![image](readme-images/am-i-responsive.jpg)
 ## How to play
 
 The player will have a total of nine attempts to correctly guess the word. Guessing multiple letters at once is not possible.If the playes enters a character other than a letter, they will receive an error message.
