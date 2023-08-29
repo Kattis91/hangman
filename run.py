@@ -9,15 +9,15 @@ print("============================================================\n"
        "letters in a word. Letters are initially completely hidden\n" 
        "but are shown as clues when you successfully guess them.\n" 
                        "\n"
-       "        1.You will play with random words\n"
-       "        2.You will have 9 attempts\n"
-       "        3.You can play several times\n"
+       "        1. You will play with random words\n"
+       "        2. You will have 9 attempts\n"
+       "        3. You can play several times\n"
       "============================================================\n")
 
 def get_user_info():
     """
-    Gives a user the opportunity to enter a username. 
-    Runs a while loop to collect data from the user, which must be yes or no. 
+    Gives a user the opportunity to enter a username.
+    Runs a while loop to collect data from the user, which must be yes or no.
     The loop will repeatedly request data until we get yes or no.
     """
     username = input("Please enter your name: ")
@@ -45,12 +45,11 @@ def get_word():
     """
     Gets and returns a random word from the words list
     """
-    return random.choice(words)
+    return random.choice(words).upper()
 
 
 print("\nThe game now begins...3...2...1")
 print(HANGMAN_LEVELS[0])
-
 
 def start_game(chosen_word):
     """
@@ -60,7 +59,7 @@ def start_game(chosen_word):
     hidden_word = ['_' for i in range(len(chosen_word))]
     print(' '.join(hidden_word))
     print(chosen_word)
-
+    
 
 def check(chosen_word, guess):
     """
@@ -75,64 +74,63 @@ def check(chosen_word, guess):
 already_guessed = []
 already_shown = []
 
-
 def validate_data(chosen_word):
     """
-    Takes in user's guess. Validates data from the input and ensures
+    Takes in a user's guess. Validates data from the input and ensures
     that the user enters one letter at each guess.
     Checks if the letter was already guessed, and if it is,
-    asks user for a new letter. Puts all new guesses in a list.
+    asks the user for a new letter. Puts all new guesses in a list.
     Tells the user whether the guessed letter is in the word or not.
     Prints out the next hangman_level and counts down the number of attempts
     for each guess that is not correct.
-    Tells user the word when all the attempts are used. 
+    Tells user the word when all the attempts are used.
     """
     guess = None
     max_attempts = 9
     game_over = False
        
     while not game_over:
-        guess = input("\n\nEnter a letter: ").lower()
+        guess = input("\n\nEnter a letter: ").upper()
 
         if len(guess) == 1 and guess.isalpha():
             result = check(chosen_word, guess)
             if guess in already_guessed:
-                print(f"\nYou have alredy guessed {guess}. Try again!\n")
+                print(f"\nYou have already guessed letter {guess}. Try again!\n")
             elif result:
-                print(f"\nYes, {guess} is in the word!")
+                print(f"\nYes, letter {guess} is in the word!\n")
                 already_guessed.append(guess)
                 already_shown.append(guess)
             else:
-                print(f"\nThe letter {guess} is not in the word.")
+                print(f"\nSorry... letter {guess} is not in the word.")
                 already_guessed.append(guess)
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
-                    game_over = True   
+                    game_over = True
         else:
-            print("\nYou need to enter A LETTER. ")
-        
+            print("\nYou need to enter A LETTER.\n")
+
         show_the_letter(chosen_word)
-             
+
     return show_game_over() if game_over else guess
 
 
 def show_the_letter(chosen_word):
     """
-    Replaces underscores with letters when user guesses correct
+    Replaces underscores with letters when a user guesses correctly
     """
     for letter in chosen_word:
         if letter in already_shown:
             print(letter, end=" ")
         else:
             print("_", end=" ")
-
+            
 
 def show_game_over():
     """
-    Asks if user wants to play again.
+    Asks if a user wants to play again.
     Takes over only when game_over is True
     """
     play_again = input("\n\nWould you like to play again?")
@@ -157,6 +155,7 @@ def main():
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
- 
+    
+    
 main()
 
