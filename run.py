@@ -125,6 +125,8 @@ def validate_data(chosen_word):
         if "_" not in hidden_word:
             game_over = True
             print("\n\nCongratulations! You won the game! GOOD JOB!")
+            already_shown.clear()
+            already_guessed.clear()
 
     return show_game_over() if game_over else guess
 
