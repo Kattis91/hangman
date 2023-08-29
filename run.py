@@ -7,13 +7,13 @@ from words import words
 import time
 
 print("==================================\n"
-       "Welcome to the HANGMAN game!\n"
-       "The game involves guessing\n"
-       "involves guessing letters in\n"
-       "a word. Letters are initially\n"
-       "completely hidden but are shown\n" 
-       "in their positions when you\n"
-       "successfully guess them.\n" 
+      "Welcome to the HANGMAN game!\n"
+      "The game involves guessing\n"
+      "involves guessing letters in\n"
+      "a word. Letters are initially\n"
+      "completely hidden but are shown\n" 
+      "in their positions when you\n"
+      "successfully guess them.\n" 
                   "\n"
        "1. You will play with random words\n"
        "2. You will have 9 attempts\n"
@@ -55,7 +55,7 @@ def get_player_choice():
         if player_choice.lower().strip() == "yes":
             print("\nLet's go then...\U0001F60E")
             break
-        print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
+        print(f"\nYou entered {player_choice}, please enter 'yes' or 'no'\n")
         player_choice = input("yes / no: ")
         
 
