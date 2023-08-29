@@ -88,6 +88,7 @@ def validate_data(chosen_word):
     guess = None
     max_attempts = 9
     game_over = False
+    hidden_word = ["_" for i in range(len(chosen_word))]
        
     while not game_over:
         guess = input("\n\nEnter a letter: ").upper()
@@ -113,6 +114,12 @@ def validate_data(chosen_word):
             print("\nYou need to enter A LETTER.\n")
 
         show_the_letter(chosen_word)
+        
+        #loops over the chosen_word, and if the letter guessed is
+        #in chosen_word, replaces index with the guessed letter.
+        for index, letter in enumerate(chosen_word):
+            if guess == letter:
+                hidden_word[index] = letter
 
     return show_game_over() if game_over else guess
 
