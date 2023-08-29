@@ -29,7 +29,7 @@ def validate_username():
         if username == "":
             print("\nYou didn't enter any name. Please try again!\n")
             continue
-        print(f"\nHello {username}, are you ready to play?\n")
+        print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
         break
 
 
@@ -49,7 +49,7 @@ def get_user_choice():
             quit()
             break
         if user_choice.lower() == "yes":
-            print("\nLet's go then...")
+            print("\nLet's go then...\U0001F60E")
             break
         print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
         user_choice = input("yes / no: ")
@@ -118,6 +118,7 @@ def validate_data(chosen_word):
     hidden_word = ["_" for i in range(len(chosen_word))]
        
     while not game_over:
+        time.sleep(0.5)
         guess = input("\n\nEnter a letter: ").upper()
 
         if len(guess) == 1 and guess.isalpha():
@@ -155,7 +156,7 @@ def validate_data(chosen_word):
         #finishes the game and prints a message to the user.
         if "_" not in hidden_word:
             game_over = True
-            print("\n\nCongratulations! You won the game! GOOD JOB!")
+            print("\n\nCongratulations! You won the game! GOOD JOB! \U0001F973")
             already_shown.clear()
             already_guessed.clear()
 
