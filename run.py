@@ -83,7 +83,7 @@ def start_game(chosen_word):
     One dash for each letter in the word
     """
     hidden_word = ['_' for i in range(len(chosen_word))]
-    time.sleep(1)
+    time.sleep(0.7)
     print(' '.join(hidden_word))
     print(chosen_word)
     
@@ -123,8 +123,10 @@ def validate_data(chosen_word):
         if len(guess) == 1 and guess.isalpha():
             result = check(chosen_word, guess)
             if guess in already_guessed:
+                time.sleep(0.5)
                 print(f"\nYou have already guessed letter {guess}. Try again!\n")
             elif result:
+                time.sleep(0.5)
                 print(f"\nYes, letter {guess} is in the word!\n")
                 already_guessed.append(guess)
                 already_shown.append(guess)
@@ -132,7 +134,9 @@ def validate_data(chosen_word):
                 print(f"\nSorry... letter {guess} is not in the word.")
                 already_guessed.append(guess)
                 max_attempts -= 1
+                time.sleep(0.7)
                 print(f"\nYou have {max_attempts} attempts left")
+                time.sleep(1.2)
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
