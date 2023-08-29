@@ -4,6 +4,8 @@ from hangman import HANGMAN_LEVELS
 
 from words import words
 
+import time
+
 print("============================================================\n"
        "Welcome to the Hangman game! The game involves guessing\n" 
        "letters in a word. Letters are initially completely hidden\n" 
@@ -21,7 +23,7 @@ def get_user_info():
     The loop will repeatedly request data until we get yes or no.
     """
     username = input("Please enter your name: ")
-    print(f"\nHello {username}, are you ready to play?\n")
+    print(f"\nHello {username} are you ready to play?\n")
     user_choice = input("yes / no: ")
 
     while True:
@@ -48,7 +50,16 @@ def get_word():
     return random.choice(words).upper()
 
 
-print("\nThe game now begins...3...2...1")
+time.sleep(1)
+print("\nThe game now begins...\n")
+time.sleep(1)
+print("3\n")
+time.sleep(1)
+print("2\n")
+time.sleep(1)
+print("1")
+
+time.sleep(1)
 print(HANGMAN_LEVELS[0])
 
 def start_game(chosen_word):
@@ -57,6 +68,7 @@ def start_game(chosen_word):
     One dash for each letter in the word
     """
     hidden_word = ['_' for i in range(len(chosen_word))]
+    time.sleep(1)
     print(' '.join(hidden_word))
     print(chosen_word)
     
