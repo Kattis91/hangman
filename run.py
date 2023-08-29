@@ -6,19 +6,17 @@ from words import words
 
 import time
 
-print("==================================\n"
-      "Welcome to the HANGMAN game!\n"
-      "The game involves guessing\n"
-      "involves guessing letters in\n"
-      "a word. Letters are initially\n"
-      "completely hidden but are shown\n" 
-      "in their positions when you\n"
-      "successfully guess them.\n" 
-                  "\n"
-       "1. You will play with random words\n"
-       "2. You will have 9 attempts\n"
-       "3. You can play several times\n"
-      "===================================\n")
+print("====================================\n"
+      "Welcome to the HANGMAN game!\n\n"
+      "The game involves guessing letters\n"
+      "in a word. At the beginning of the\n"
+      "game, letters are hidden. Once\n"
+      "guessed, they are revealed in their\n" 
+      "actual posititons.\n\n"        
+       "1. You will have 9 attempts\n"
+       "2. You can play several times\n"
+      "=====================================\n")
+
 
 def validate_username():
     """
