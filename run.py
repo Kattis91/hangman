@@ -36,26 +36,26 @@ def validate_username():
 validate_username()
 
 
-def get_user_choice():
+def get_player_choice():
     """
-    Runs a while loop to collect data from the user, which must be yes or no.
+    Runs a while loop to collect data from the playes, which must be yes or no.
     The loop will repeatedly request data until we get yes or no.
     """      
-    user_choice = input("yes / no: ")
+    player_choice = input("yes / no: ")
 
     while True:
-        if user_choice.lower().strip() == "no":
+        if player_choice.lower().strip() == "no":
             print("\nYou are welcome back another time. Have a nice day!")
             quit()
             break
-        if user_choice.lower().strip() == "yes":
+        if player_choice.lower().strip() == "yes":
             print("\nLet's go then...\U0001F60E")
             break
         print(f"\nYou entered {user_choice}, please enter 'yes' or 'no'\n")
-        user_choice = input("yes / no: ")
+        player_choice = input("yes / no: ")
         
 
-get_user_choice()
+get_player_choice()
 
 
 def get_word():
@@ -89,7 +89,7 @@ def start_game(chosen_word):
 
 def check(chosen_word, guess):
     """
-    Checks whether the letter guessed by the user is in the word.
+    Checks whether the letter guessed by the player is in the word.
     Returns true if the letter is in the word, returns false if it is not
     """
     if guess in chosen_word:
@@ -102,14 +102,14 @@ already_shown = []
 
 def validate_data(chosen_word):
     """
-    Takes in a user's guess. Validates data from the input and ensures
-    that the user enters one letter at each guess.
+    Takes in a players's guess. Validates data from the input and ensures
+    that the player enters one letter at each guess.
     Checks if the letter was already guessed, and if it is,
-    asks the user for a new letter. Puts all new guesses in a list.
-    Tells the user whether the guessed letter is in the word or not.
+    asks the player for a new letter. Puts all new guesses in a list.
+    Tells the player whether the guessed letter is in the word or not.
     Prints out the next hangman_level and counts down the number of attempts
     for each guess that is not correct.
-    Tells user the word when all the attempts are used.
+    Tells the player the word when all the attempts are used.
     """
     guess = None
     max_attempts = 9
@@ -175,7 +175,7 @@ def show_the_letter(chosen_word):
 
 def show_game_over():
     """
-    Asks if a user wants to play again.
+    Asks if a player wants to play again.
     Takes over only when game_over is True
     """
     time.sleep(1.8)
