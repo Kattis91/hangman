@@ -120,6 +120,11 @@ def validate_data(chosen_word):
         for index, letter in enumerate(chosen_word):
             if guess == letter:
                 hidden_word[index] = letter
+        #checks if all the letters are guessed, and if it is,
+        #finishes the game and prints a message to the user.
+        if "_" not in hidden_word:
+            game_over = True
+            print("\n\nCongratulations! You won the game! GOOD JOB!")
 
     return show_game_over() if game_over else guess
 
