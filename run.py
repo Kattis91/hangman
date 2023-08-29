@@ -22,8 +22,17 @@ def get_user_info():
     Runs a while loop to collect data from the user, which must be yes or no.
     The loop will repeatedly request data until we get yes or no.
     """
-    username = input("Please enter your name: ")
-    print(f"\nHello {username} are you ready to play?\n")
+    while True:
+        username = input("Please enter your name: ")
+        if username.isspace():
+            print("\nYou entered only spaces. Please try again!\n")
+            continue
+        if username == "":
+            print("\nYou didn't enter any name. Please try again!\n")
+            continue
+        print(f"\nHello {username}, are you ready to play?\n")
+        break
+            
     user_choice = input("yes / no: ")
 
     while True:
