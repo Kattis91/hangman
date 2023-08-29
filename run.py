@@ -16,11 +16,10 @@ print("============================================================\n"
        "        3. You can play several times\n"
       "============================================================\n")
 
-def get_user_info():
+def validate_username():
     """
-    Gives a user the opportunity to enter a username.
-    Runs a while loop to collect data from the user, which must be yes or no.
-    The loop will repeatedly request data until we get yes or no.
+    Validates username making sure that a player doesn't enter
+    only spaces, and that a username is not an empty string.
     """
     while True:
         username = input("Please enter your name: ")
@@ -32,6 +31,17 @@ def get_user_info():
             continue
         print(f"\nHello {username}, are you ready to play?\n")
         break
+
+
+validate_username()
+
+
+def get_user_info():
+    """
+    Gives a user the opportunity to enter a username.
+    Runs a while loop to collect data from the user, which must be yes or no.
+    The loop will repeatedly request data until we get yes or no.
+    """
             
     user_choice = input("yes / no: ")
 
