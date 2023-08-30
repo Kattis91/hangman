@@ -117,7 +117,21 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
        - The game reveals the guessed letter's position in the word.
 
        - A player can guess the next letter as long as the game is still in progress. 
-  
-  
 
+
+### The game is finished
+
+#### What occurs when all letters are guessed or no attempts remain?
+
+  - Game over:
+   
+    ![image](readme-images/game-over.jpg)
+
+      - "You have 0 attempts left" message is displayed on the screen.
+
+      - The last hangman image with the GAME OVER print is printed out for the player.
+
+      - The player receives the information about the word that was previously hidden by the underscores.
+
+      - The games asks whether the player wants to play again or not.
 
