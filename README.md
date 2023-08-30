@@ -44,12 +44,12 @@ Users get a possibility to play a guessing game even if they do not have someone
 
   - A player will get an error message.
 
-  - The error message will repeat until the player enters a valid name or an empty word (check the image below).
+  - The error message will continue to display until the player enters a valid name or an empty word. The error message for empty words is shown in the image below.
    
 ![image](readme-images/no-empty-strings-in-name.jpg)
 
-  - It is not possible to enter an empty word as a name.
+  -  It is not possible to enter an empty word as a name.
 
   -  A player will get an error message.
 
-  - The error message will repeat until the player enters a valid name or an empty word (check the first image in this section).
+  - The error message will continue to display until the player enters a valid name or only whitespaces. The error message for whitespaces is shown in the first image in this section.
