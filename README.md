@@ -154,3 +154,9 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
      - A player gets an opportunity to enter a letter.
 
+  - NO:
+
+    ![image](readme-images/no-to-play-again.jpg)
+
+    A "Welcome back another time!" message appears on the screen.
+
