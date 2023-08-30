@@ -133,5 +133,13 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
       - The player receives the information about the word that was previously hidden by the underscores.
 
-      - The games asks whether the player wants to play again or not.
+      - The game asks whether the player wants to play again or not.
+
+  - A player wins:
+
+    ![image](readme-images/game-winner.jpg)
+
+      - Congratulations message is printed out for the player.
+
+      - The game asks whether the player wants to play again or not.
 
