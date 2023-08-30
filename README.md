@@ -107,6 +107,16 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
        - A player gets a message with the information about that.
 
        - An opportunity to enter another letter appears on the screen.
+
+    - The letter IS IN THE WORD:
+
+      ![image](readme-images/letter-is-in-the-word.png)
+
+       - A player gets a message with the information about that.
+
+       - The game reveals the guessed letter's position in the word.
+
+       - A player can guess the next letter as long as the game is still in progress. 
   
   
 
