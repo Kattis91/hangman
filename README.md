@@ -54,13 +54,28 @@ Users get a possibility to play a guessing game even if they do not have someone
 
   - The error message will continue to display until the player enters a valid name or only whitespaces. The error message for whitespaces is shown in the first image in this section.
 
-  ### Ready to play?
+### Ready to play?
 
-  #### Once validation is complete, the user is given the option to choose either to play or not.
+#### Once validation is complete, the user is given the option to choose either to play or not.
 
-  I know it's very early in the game, but what if a user accidentally stumbled upon the game or immediately regretted it?
+I know it's very early in the game, but what if a user accidentally stumbled upon the game or immediately regretted it?
 
-  ![image](readme-images/hello-name.jpg)
+![image](readme-images/hello-name.jpg)
+
+  
+ - The player chooses to play:
+
+    - ![image](readme-images/ready-to-play.jpg)
+
+       The game begins. Some time delay is added for animation feeling.
+
+  - The player chooses NOT to play:
+   
+    - ![image](readme-images/not-ready-to-play.jpg)
+
+      The game welcomes the player to come back another time.
+
+ 
 
   
   
