@@ -21,3 +21,15 @@ Users get a possibility to play a guessing game even if they do not have someone
  Flowchart was created using [Lucidchart]("https://www.lucidchart.com/pages/sv").
 
  ![image](readme-images/flowchart.jpeg)
+
+ ## Features 
+
+ ### Welcome message
+
+ ![image](readme-images/welcoming-message.jpg)
+  
+  - Tells a player what type of game it is.
+  
+  - Gives information about the game, amount of attempts, and the possibility to play several times.
+
+  - Requests player's name.
