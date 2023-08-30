@@ -160,3 +160,30 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     A "Welcome back another time!" message appears on the screen.
 
+## Deployment
+
+
+ 1. Sign up for Heroku and accept terms of service.
+
+ 2. Click the **"Create a new app"** button.
+
+ 3. Name the app (a name must be unique) and choose a region.
+
+ 4. Create a _Config Var_ with the key **PORT** and the value **8000**.
+
+ 5. Click **"Add buildpack"** and the following buildpacks (in the order presenting):
+     - Python
+     - NodeJS
+
+ 6. Click on the **"Deploy"** section on the top of the page.
+
+ 7. Select **GitHub** as deployment method and click **"The connect to GitHub"** button.
+
+ 8. Search for the repository for this project, _hangman_. 
+
+ 9. Click **"Connect"** to link up Heroku app to the GitHub repository.
+
+ 10. Click the **"Enable Automatic Deploys"** button to make it possible for Heroku to rebuild the app a new change is pushed to GitHub repository.
+
+ 11. Click **"Deploy Branch"**.
+
