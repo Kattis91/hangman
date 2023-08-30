@@ -86,7 +86,19 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
   - A player gets an opportunity to enter a letter.
 
-  - 
+  - Input validation: 
+  
+    - The letter is NOT in the word:
+
+      ![image](readme-images/not-in-the-word.jpg)
+
+       - A player gets a message with the information about that.
+
+       - Information about how many attempts are left is displayed.
+
+       - The next hangman image is displayed.
+
+       - A player can guess the next letter as long as the game is still in progress. 
   
   
 
