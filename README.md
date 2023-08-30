@@ -76,7 +76,17 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
       The game welcomes the player to come back another time.
 
  
+### Enter a letter
 
+![image](readme-images/enter-a-letter.jpg)
+
+  - This section shows the first hangman image.
+
+  - A player gets to see the hidden word.
+
+  - A player gets an opportunity to enter a letter.
+
+  - 
   
   
 
