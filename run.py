@@ -146,6 +146,8 @@ def validate_data(chosen_word):
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
                     game_over = True
+                    already_shown.clear()
+                    already_guessed.clear()
         else:
             print("\nYou need to enter A LETTER.\n")
 
