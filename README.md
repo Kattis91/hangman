@@ -143,3 +143,14 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
       - The game asks whether the player wants to play again or not.
 
+
+### Would you like to play again?
+
+  - YES:
+   
+    ![image](readme-images/play-again.jpg)
+
+     - A new random word that is currently hidden behind the underscores, appears on the screen.
+
+     - A player gets an opportunity to enter a letter.
+
