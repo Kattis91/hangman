@@ -18,7 +18,7 @@ Users get a possibility to play a guessing game even if they do not have someone
 
  ## Flowchart
 
- Flowchart was created using [Lucidchart]("https://www.lucidchart.com/pages/sv").
+ Flowchart was created using [Lucidchart]("https://www.lucidchart.com/pages/sv")
 
  ![image](readme-images/flowchart.jpeg)
 
@@ -33,3 +33,23 @@ Users get a possibility to play a guessing game even if they do not have someone
   - Gives information about the game, amount of attempts, and the possibility to play several times.
 
   - Requests player's name.
+
+### Name Validation
+
+#### Input validation and error-checking:
+
+![image](readme-images/no-whitespaces-in-name.jpg)
+
+  - It is not possible to enter only spaces.
+
+  - A player will get an error message.
+
+  - The error message will repeat until the player enters a valid name or an empty word (check the image below).
+   
+![image](readme-images/no-empty-strings-in-name.jpg)
+
+  - It is not possible to enter an empty word as a name.
+
+  -  A player will get an error message.
+
+  - The error message will repeat until the player enters a valid name or an empty word (check the first image in this section).
