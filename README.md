@@ -163,7 +163,7 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     ![image](readme-images/was-it-yes-or-no.jpg)
   
-    If a player enters something else than 'yes' or 'no', a question repeatedely appears on the screen.
+    If a player enters something else than 'yes' or 'no', a question repeatedly appears on the screen.
 
 
 ## Solved Bugs after Deployment:
@@ -179,6 +179,11 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 ### Validator testing
 
 No errors were found when passing through the official [PEP8 Linter](https://pep8ci.herokuapp.com/).
+
+### Manual Testing
+
+| Feature | Expect | Action | Result | Pass/Fail |
+|---------|--------|--------|--------|-----------|
 
 ## Credits
 
