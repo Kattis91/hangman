@@ -18,7 +18,7 @@ Users get a possibility to play a guessing game even if they do not have someone
 
  ## Flowchart
 
- Flowchart was created using [Lucidchart]("https://www.lucidchart.com/pages/sv")
+ Flowchart was created using [Lucidchart](https://www.lucidchart.com/pages/sv).
 
  ![image](readme-images/flowchart.jpeg)
 
