@@ -29,7 +29,7 @@ def validate_username():
         try:
             username = input("Please enter your name: ")
             if username.isalpha():
-                print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
+                print(f"\nHi {username} \U0001F44B. Are you ready to play?\n")
                 break
             raise TypeError
         except TypeError:
@@ -45,7 +45,7 @@ def get_player_choice():
     """
     Runs a while loop to collect data from the playes, which must be yes or no.
     The loop will repeatedly request data until we get yes or no.
-    """      
+    """
     player_choice = input("yes / no: ")
 
     while True:
@@ -129,7 +129,7 @@ def validate_data(chosen_word):
         if len(guess) == 1 and guess.isalpha():
             result = check(chosen_word, guess)
             if guess in already_guessed:
-                print(f"\nYou have already guessed letter {guess}. Try again!\n")
+                print(f"\nYou've already guessed letter {guess}. Try again!\n")
             elif result:
                 print(f"\nYes, letter {guess} is in the word!\n")
                 already_guessed.append(guess)
@@ -149,7 +149,7 @@ def validate_data(chosen_word):
             print("\nYou need to enter A LETTER.\n")
 
         show_the_letter(chosen_word)
-    
+
         # loops over the chosen_word, and if the letter guessed is
         # in chosen_word, replaces index with the guessed letter.
         for index, letter in enumerate(chosen_word):
@@ -159,7 +159,7 @@ def validate_data(chosen_word):
         # finishes the game and prints a message to the user.
         if "_" not in hidden_word:
             game_over = True
-            print("\n\nCongratulations! You won the game! GOOD JOB! \U0001F973")
+            print("\n\nCongratulations! You won the game! GOOD JOB!\U0001F973")
             already_shown.clear()
             already_guessed.clear()
 
@@ -190,7 +190,7 @@ def show_game_over():
         if play_again.lower().strip() == "no":
             print("\nWelcome back another time!")
             break
-            exit()   
+            exit()
         print("\n\nWas it 'yes' or 'no'?\n\n")
         play_again = input("Would you like to play again?\n\n")
         continue
@@ -200,10 +200,10 @@ def main():
     """
     Runs all program functions
     """
-    
+
     chosen_word = get_word()
     start_game(chosen_word)
-    validate_data(chosen_word)  
+    validate_data(chosen_word)
 
 
 main()
