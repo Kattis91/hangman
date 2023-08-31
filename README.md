@@ -162,9 +162,17 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
 ## Credits
 
-## Media
+### Media
 
 Full Emoji List was found on [Unicode](https://unicode.org/emoji/charts/full-emoji-list.html).
+
+### Content
+
+  - [Random Word Generator](https://randomwordgenerator.com/) was used to generate random words.
+
+  - I got the inspiration for my hangman images by the images shown in the [How to build HANGMAN with Python in 10 MINUTES](https://www.youtube.com/watch?v=m4nEnsavl6w) YouTube video.
+
+  - Thanks to the Tutor Support for helping me finding a solution for looping over the word and replacing index with the guessed letter (if the letter guessed is in the word).
 
 
 ## Deployment
