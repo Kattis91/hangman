@@ -109,7 +109,7 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     - The letter IS IN THE WORD:
 
-      ![image](readme-images/letter-is-in-the-word.png)
+      ![image](readme-images/letter-is-in-the-word.jpg)
 
        - A player gets a message with the information about that.
 
