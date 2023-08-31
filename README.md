@@ -38,21 +38,14 @@ Users get a possibility to play a guessing game even if they do not have someone
 
 #### Input validation and error-checking:
 
-![image](readme-images/no-whitespaces-in-name.jpg)
+![image](readme-images/name-validation.jpg)
+  
+  - A player can only enter letters.
 
-  - It is not possible to enter only spaces.
+  - Nothing else but letters are accepted. 
 
-  - A player will get an error message.
+  - A name should contain at least ONE letter.
 
-  - The error message will continue to display until the player enters a valid name or an empty word. The error message for empty words is shown in the image below.
-   
-![image](readme-images/no-empty-strings-in-name.jpg)
-
-  -  It is not possible to enter an empty word as a name.
-
-  -  A player will get an error message.
-
-  - The error message will continue to display until the player enters a valid name or only whitespaces. The error message for whitespaces is shown in the first image in this section.
 
 ### Ready to play?
 
