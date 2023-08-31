@@ -21,8 +21,9 @@ print("====================================\n"
 
 def validate_username():
     """
-    Validates username making sure that a player doesn't enter
-    only spaces, and that a username is not an empty string.
+    Validates the username to ensure that a player enters a name
+    with at least one letter.
+    Checks that nothing else than letters are entered.
     """
     while True:
         try:
