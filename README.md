@@ -184,6 +184,8 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 
 | Feature | Expect | Action | Result | Pass/Fail |
 |---------|--------|--------|--------|-----------|
+| Enter a name | When trying to input empty words, whitespaces, digits, symbols or a combination of letters and other characters, a player should receive an error message stating "Please enter a name containing at least one letter. NOTE: Only letters are accepted!". The message should repeat itself until a valid name is entered | Enter something else than only letters | A "Please enter a name containing at least one letter. NOTE: Only letters are accepted!" message appears on the screen. The message displays as long as the entered name doesn't contain only letters.| Pass
+
 
 ## Credits
 
