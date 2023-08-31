@@ -159,6 +159,13 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     A "Welcome back another time!" message appears on the screen.
 
+  - Was it YES or NO?
+
+    ![image](readme-images/was-it-yes-or-no.jpg)
+  
+    If a player enters something else than 'yes' or 'no', a question repeatedely appears on the screen.
+
+
 ## Solved Bugs after Deployment:
 
   - When a player started a new round after losing, the letters that were correctly guessed in previous rounds were automatically entered as correctly guessed letters even for the new word. I solved the problem by resetting the list of correctly guessed letters every time a player loses the game.
