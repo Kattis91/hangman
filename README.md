@@ -194,11 +194,7 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 | Game over | If all attempts are used and the word remains unguessed, the game will show a message "You have 0 attempts left". Additionally, the game should display the final image of the hangman with the words "GAME OVER" and the word that a player was trying to guess. | Use all the attempts by entering incorrect letters. To identify the incorrect letters, print out the word without any hidden characters. | "You have 0 attempts left" message is displayed on the screen along with the final "GAME OVER" hangman image and the word that was previously hidden. | Pass
 | Congratulations! | When the final letter is guessed, the game should display a message that says "Congratulations! You won the game! GOOD JOB!" | Win the game by entering all the correct letters.To identify all the correct letters, print out the word without any hidden characters. | "Congratulations! You won the game! GOOD JOB!" message appears on the screen. | Pass 
 | Would you like to play again? (YES) | When the player answers "yes," the game should display a new word and provide the option to input a letter. | Type "yes" into the terminal. | A new word and option to enter a letter appear on the screen. | Pass
-
- A new random word that is currently hidden behind the underscores, appears on the screen.
-
-     - A player gets an opportunity to enter a letter.
-
+| Would you like to play again? (YES) | When the player answers "no", the game should display a message saying "Welcome back another time!" | Type "no" into the terminal. | "Welcome back another time!" message displays on the screen. | Pass
 
 
     
