@@ -160,6 +160,13 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     A "Welcome back another time!" message appears on the screen.
 
+## Credits
+
+## Media
+
+Full Emoji List was found on [Unicode](https://unicode.org/emoji/charts/full-emoji-list.html).
+
+
 ## Deployment
 
 
