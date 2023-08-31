@@ -191,10 +191,8 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 | Enter a letter. The letter is present in the word | When a player correctly guesses a letter, the game should display a message saying "Yes, letter {guess}* is in the word!" and reveal the letter in its correct position. ***{guess}** - _the player's input/guess_. | Enter a letter that is present in the word. It is possible to do that by printing out the "unhidden" word | "Yes, letter {guess} is in the word!" message appears on the screen, and the letter is printed out in its correct position. | Pass
 | Enter a letter. The letter is NOT present in the word. | When a player inputs a letter that is not present in the word, the game should show a message saying "Sorry... letter {guess} is not in the word." Moreover, the game should show details regarding the remaining attempts and display the upcoming hangman image. | Enter a letter that is NOT present in the word. It is possible to find such a letter by printing out the "unhidden" word. | "Sorry... letter {guess} is not in the word." message appears on the screen. Information about amount of attempts and the next hangman image are displayed.| Pass
 | Enter a letter. The letter has ALREADY been guessed. | When a player enters a letter that has already been guessed, the game should display a message that says "You've already guessed that letter. Please try again!" The message should continue to be displayed until a new letter is entered. | Enter a letter that has already been guessed. | "You've already guessed that letter. Please try again!" message is displayed. It keeps on displaying until an unguessed letter is entered. | Pass
-
+| Game over | If all attempts are used and the word remains unguessed, the game will show a message "You have 0 attempts left". Additionally, the game should display the final image of the hangman with the words "GAME OVER" and the word that a player was trying to guess. | Use all the attempts by entering incorrect letters. To identify the incorrect letters, print out the word without any hidden characters. | "You have 0 attempts left" message is displayed on the screen along with the final "GAME OVER" hangman image and the word that was previously hidden. | Pass
       
-
-
 ## Credits
 
 ### Media
