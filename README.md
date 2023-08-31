@@ -188,6 +188,9 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 | Are you ready to play? (YES) | When a player chooses to play and writes "yes" in the terminal, "The game begins in..." counting down appears on the screen along with the first hangman image, hidden word, and the possibility to enter a letter. | Enter "yes" in the terminal. | The game starts with a countdown, followed by a hangman image and "Enter a letter" section.| Pass
 | Are you ready to play? (NO) | When a player chooses not to play and writes "no" in the terminal, a player should receive a message stating "You are welcome back another time. Have a nice day!" | Enter "no" in the terminal | "You are welcome back another time. Have a nice day!" message appears on the screen. | Pass
 | Are you ready to play? (Neither YES or NO) | When a player enters something else than "yes" or "no", a player should receive an error message stating "You entered {player_choice}, please enter 'yes' or 'no'". The message should repeat itself until 'yes' or 'no' is entered. ***{player_choice}** - _the player's specific input_. | Enter something else than 'yes' or 'no'. | "You entered {player_choice}, please enter 'yes' or 'no'" message appears on the screen until 'yes' or 'no' is entered | Pass
+| Enter a letter. The letter is present in the word | When a player correctly guesses a letter, the game should display a message saying "Yes, letter {guess}* is in the word!" and reveal the letter in its correct position. ***{guess}** - _the player's input/guess_. | Enter a letter that is present in the word. It is possible to do that by printing out the "unhidden" word | "Yes, letter {guess} is in the word!" message appears on the screen, and the letter is printed out in its correct position. | Pass
+
+      
 
 
 ## Credits
