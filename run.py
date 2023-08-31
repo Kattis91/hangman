@@ -32,19 +32,9 @@ def validate_username():
                 break
             raise TypeError
         except TypeError:
-            print("Please enter name that consists of at least one letter.\n")
+            print("\nPlease enter a name containing at least one letter.")
+            print("NOTE: Only letters are accepted!\n")
             continue
-        
-    #while True:
-        #username = input("Please enter your name: ")
-        #if username.isspace():
-            #print("\nYou entered only spaces. Please try again!\n")
-            #continue
-        #if username == "":
-            #print("\nYou didn't enter any name. Please try again!\n")
-            #continue
-        #print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
-        #break
 
 
 validate_username()
@@ -209,6 +199,7 @@ def main():
     """
     Runs all program functions
     """
+    
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)  
