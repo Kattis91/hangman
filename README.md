@@ -166,6 +166,8 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
   - When a player plays another round after losing, a message was displayed stating that a letter had already been guessed, even if it hadn't been guessed in that particular round. I solved the problem by resetting the list of all the guessed letters every time a player loses the game.
 
+  - The same hangman image was displayed twice. The image was displayed at the beginning of the game. The same image was even displayed when the player guessed incorrectly for the first time. I solved this problem by adding one more image to the hangman list to make it work with indexes.
+
 ## Credits
 
 ### Media
