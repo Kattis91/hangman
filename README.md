@@ -195,6 +195,7 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 | Congratulations! | When the final letter is guessed, the game should display a message that says "Congratulations! You won the game! GOOD JOB!" | Win the game by entering all the correct letters.To identify all the correct letters, print out the word without any hidden characters. | "Congratulations! You won the game! GOOD JOB!" message appears on the screen. | Pass 
 | Would you like to play again? (YES) | When the player answers "yes," the game should display a new word and provide the option to input a letter. | Type "yes" into the terminal. | A new word and option to enter a letter appear on the screen. | Pass
 | Would you like to play again? (YES) | When the player answers "no", the game should display a message saying "Welcome back another time!" | Type "no" into the terminal. | "Welcome back another time!" message displays on the screen. | Pass
+| Would you like to play again? (Neither YES or NO) | When a player enters something other than "yes" or "no", the game should prompt them with a question asking if it was "yes" or "no". The question should continue to be displayed until the player types either "yes" or "no". | Type something into the terminal (something else than "yes" or "no"). | "Was it 'yes' or 'no'?" question appears on the screen. It keeps on displaying until either "yes" or "no" is entered. | Pass
 
 
     
