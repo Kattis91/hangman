@@ -182,6 +182,8 @@ Full Emoji List was found on [Unicode](https://unicode.org/emoji/charts/full-emo
 
   - Thanks to the Tutor Support for helping me finding a solution for looping over the word and replacing index with the guessed letter (if the letter guessed is in the word).
 
+  - Instructions for replacing underscores with letters and revealing their correct positions in the word upon correct guesses come from [GeeksForGeeks](https://www.geeksforgeeks.org/python-program-for-word-guessing-game/).
+
 
 ## Deployment
 
