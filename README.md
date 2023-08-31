@@ -164,6 +164,8 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
   - When a player started a new round after losing, the letters that were correctly guessed in previous rounds were automatically entered as correctly guessed letters even for the new word. I solved the problem by resetting the list of correctly guessed letters every time a player loses the game.
 
+  - When a player plays another round after losing, a message was displayed stating that a letter had already been guessed, even if it hadn't been guessed in that particular round. I solved the problem by resetting the list of all the guessed letters every time a player loses the game.
+
 ## Credits
 
 ### Media
