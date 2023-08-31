@@ -67,6 +67,12 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
     - ![image](readme-images/not-ready-to-play.jpg)
 
       The game welcomes the player to come back another time.
+  
+  - The player enters something else than 'yes' or 'no':
+    
+    - ![image](readme-images/neither-yes-or-no.jpg)
+      
+      An error message appear on the screen asking the player enter either 'yes' or 'no'.
 
  
 ### Enter a letter
