@@ -160,6 +160,10 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
     A "Welcome back another time!" message appears on the screen.
 
+## Solved Bugs after Deployment:
+
+  - When a player started a new round after losing, the letters that were correctly guessed in previous rounds were automatically entered as correctly guessed letters even for the new word. I solved the problem by resetting the list of correctly guessed letters every time a player loses the game.
+
 ## Credits
 
 ### Media
