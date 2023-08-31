@@ -168,6 +168,12 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
   - The same hangman image was displayed twice. The image was displayed at the beginning of the game. The same image was even displayed when the player guessed incorrectly for the first time. I solved this problem by adding one more image to the hangman list to make it work with indexes.
 
+## Testing
+
+### Validator testing
+
+No errors were found when passing through the official [PEP8 Linter](https://pep8ci.herokuapp.com/).
+
 ## Credits
 
 ### Media
