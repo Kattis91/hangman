@@ -25,15 +25,26 @@ def validate_username():
     only spaces, and that a username is not an empty string.
     """
     while True:
-        username = input("Please enter your name: ")
-        if username.isspace():
-            print("\nYou entered only spaces. Please try again!\n")
+        try:
+            username = input("Please enter your name: ")
+            if username.isalpha():
+                print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
+                break
+            raise TypeError
+        except TypeError:
+            print("Please enter name that consists of at least one letter.\n")
             continue
-        if username == "":
-            print("\nYou didn't enter any name. Please try again!\n")
-            continue
-        print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
-        break
+        
+    #while True:
+        #username = input("Please enter your name: ")
+        #if username.isspace():
+            #print("\nYou entered only spaces. Please try again!\n")
+            #continue
+        #if username == "":
+            #print("\nYou didn't enter any name. Please try again!\n")
+            #continue
+        #print(f"\nHello {username} \U0001F44B. Are you ready to play?\n")
+        #break
 
 
 validate_username()
@@ -118,6 +129,7 @@ def validate_data(chosen_word):
     guess = None
     max_attempts = 9
     game_over = False
+
     hidden_word = ["_" for i in range(len(chosen_word))]
 
     while not game_over:
@@ -136,7 +148,6 @@ def validate_data(chosen_word):
                 already_guessed.append(guess)
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
-                time.sleep(1)
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
@@ -180,7 +191,6 @@ def show_game_over():
     Asks if a player wants to play again.
     Takes over only when game_over is True
     """
-    time.sleep(1.8)
     play_again = input("\n\nWould you like to play again?\n\n")
     while True:
         if play_again.lower().strip() == "yes":
@@ -201,7 +211,7 @@ def main():
     """
     chosen_word = get_word()
     start_game(chosen_word)
-    validate_data(chosen_word)
+    validate_data(chosen_word)  
 
 
 main()
