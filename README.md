@@ -52,7 +52,6 @@ Flowchart was created using [Lucidchart](https://www.lucidchart.com/pages/sv).
 
   - A name should contain at least ONE letter.
 
-
 ### Ready to play?
 
 #### Once validation is complete, the user is given the option to choose either to play or not.
@@ -174,6 +173,8 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 - Make it possible to guess the whole word at once.
 
 - Add some colors to make the game look more appealing (e.g., green for correct answers and red for incorrect answers).
+
+- Create different difficulty levels for the game.
 
 - Show all guessed letters or the letters still available at each guess. That may be relevant if the game grows and becomes more complex.*
 
