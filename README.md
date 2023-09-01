@@ -165,7 +165,20 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
   
     If a player enters something else than 'yes' or 'no', a question repeatedly appears on the screen.
 
+## User Stories 
 
+### As a user I want to be able to:
+
+ - read concise instructions to comprehend the game rules.
+ - start a game when I am ready.
+ - receive information on what went wrong in case I make an incorrect input.
+ - know whether I guessed correctly or incorrectly or if the letter has already been guessed.
+ - see the correctly guessed letter revealed in its correct position within the word.
+ - see a new hangman image appear, as I guess incorrectly.
+ - get information about how many attempts are left, as I guess incorrectly.
+ - see the word I was guessing in case I lose the game.
+ - start a new game when the current game has ended, regardless of whether I lost or won.
+ 
 ## Solved Bugs after Deployment:
 
   - When a player started a new round after losing, the letters that were correctly guessed in previous rounds were automatically entered as correctly guessed letters even for the new word. I solved the problem by resetting the list of correctly guessed letters every time a player loses the game.
