@@ -35,8 +35,8 @@ def validate_username():
                 break
             raise TypeError
         except TypeError:
-            print("\nPlease enter a name containing at least one letter.")
             print("NOTE: Only letters are accepted!\n")
+            print("\nPlease enter a name containing at least one letter.")
             continue
 
 
