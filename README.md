@@ -169,6 +169,17 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
   
   If a player enters something else than 'yes' or 'no', a question repeatedly appears on the screen.
 
+### Future Features:
+
+- Make it possible to guess the whole word at once.
+
+- Add some colors to make the game look more appealing (e.g., green for correct answers and red for incorrect answers).
+
+- Show all guessed letters or the letters still available at each guess. That may be relevant if the game grows and becomes more complex.*
+
+  *I tried to print all the guessed letters but decided to go further without that feature to keep the game less complex (with not too much information printed out) and the terminal a little neater.
+  Moreover, players are always informed that the letter has already been guessed.
+
 ## User Stories 
 
 ### As a user I want to be able to:
