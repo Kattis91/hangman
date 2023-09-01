@@ -22,23 +22,23 @@ The game ends when the player correctly guesses all the letters or runs out of a
 
 It is possible to play the game multiple times.
 
- ## Flowchart
+## Flowchart
 
- Flowchart was created using [Lucidchart](https://www.lucidchart.com/pages/sv).
+Flowchart was created using [Lucidchart](https://www.lucidchart.com/pages/sv).
 
- ![image](readme-images/flowchart.jpeg)
+![image](readme-images/flowchart.jpeg)
 
- ## Existing Features 
+## Existing Features 
 
- ### Welcome message
+### Welcome message
 
- ![image](readme-images/welcoming-message.jpg)
+![image](readme-images/welcoming-message.jpg)
   
-  - Tells a player what type of game it is.
+- Tells a player what type of game it is.
   
-  - Gives information about the game, amount of attempts, and the possibility to play several times.
+- Gives information about the game, amount of attempts, and the possibility to play several times.
 
-  - Requests player's name.
+- Requests player's name.
 
 ### Name Validation
 
@@ -241,17 +241,22 @@ Full Emoji List was found on [Unicode](https://unicode.org/emoji/charts/full-emo
 
 ### Content
 
-  - [Random Word Generator](https://randomwordgenerator.com/) was used to generate random words.
+- [Random Word Generator](https://randomwordgenerator.com/) was used to generate random words.
 
-  - I got the inspiration for my hangman images by the images shown in the [How to build HANGMAN with Python in 10 MINUTES](https://www.youtube.com/watch?v=m4nEnsavl6w) YouTube video.
+- I got the inspiration for my hangman images by the images shown in the [How to build HANGMAN with Python in 10 MINUTES](https://www.youtube.com/watch?v=m4nEnsavl6w) YouTube video.
 
-  - Thanks to the Tutor Support for helping me finding a solution for looping over the word and replacing index with the guessed letter (if the letter guessed is in the word).
+- Thanks to the Tutor Assistance for helping me finding a solution for looping over the word and replacing index with the guessed letter (if the guessed letter is in the word). Thanks for the support beyond that throughout the project.
 
-  - Instructions for replacing underscores with letters and revealing their correct positions in the word upon correct guesses come from [GeeksForGeeks](https://www.geeksforgeeks.org/python-program-for-word-guessing-game/).
+- Instructions for replacing underscores with letters and revealing their correct positions in the word upon correct guesses come from [GeeksForGeeks](https://www.geeksforgeeks.org/python-program-for-word-guessing-game/).
+
+- Inspiration for using Try & Except statement comes from LMS and [Stack Overflow](https://stackoverflow.com/questions/47271232/use-of-try-except-for-input-validation).
+
+- Thanks to my mentor Jubril for good briefings, feedback, tip and the opportunity to ask questions.
+
+- I used Stack Overflow, W3Schools, GeeksForGeeks and LMS to expand my knowledge and find new ideas.
 
 
 ## Deployment
-
 
  1. Sign up for Heroku and accept terms of service.
 
