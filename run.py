@@ -15,7 +15,8 @@ print("====================================\n"
       " letters in a word. At the beginning\n"
       " of the game, letters are hidden.\n"
       " Once guessed, they are revealed\n"
-      " in their actual posititons.\n\n"
+      " in their actual posititons.\n"
+      " Add one letter at time.\n\n"
       " 1. You will have 9 attempts\n"
       " 2. You can play several times\n"
       "====================================\n")
@@ -66,7 +67,7 @@ get_player_choice()
 
 def get_word():
     """
-    Gets and returns a random word from the words list
+    Gets and returns a random word from the word list
     """
     return random.choice(words).upper()
 
@@ -116,7 +117,8 @@ def validate_data(chosen_word):
     Tells the player whether the guessed letter is in the word or not.
     Prints out the next hangman_level and counts down the number of attempts
     for each guess that is not correct.
-    Tells the player the word when all the attempts are used.
+    Shows the word when all the attempts are used. Finishes the game.
+    Replaces index with the guessed letter.
     """
     guess = None
     max_attempts = 9
@@ -141,6 +143,7 @@ def validate_data(chosen_word):
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
+                print(f"So far you've guessed following: {already_guessed}\n")
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
                     game_over = True
@@ -156,8 +159,8 @@ def validate_data(chosen_word):
         for index, letter in enumerate(chosen_word):
             if guess == letter:
                 hidden_word[index] = letter
-        # checks if all the letters are guessed, and if it is,
-        # finishes the game and prints a message to the user.
+        # checks if all the letters are guessed, and if they are,
+        # finishes the game and prints a message to the player.
         if "_" not in hidden_word:
             game_over = True
             print("\n\nCongratulations! You won the game! GOOD JOB!\U0001F973")
@@ -169,7 +172,7 @@ def validate_data(chosen_word):
 
 def show_the_letter(chosen_word):
     """
-    Replaces underscores with letters when a user guesses correctly
+    Replaces underscores with letters when the player guesses correctly
     """
     for letter in chosen_word:
         if letter in already_shown:
@@ -180,7 +183,7 @@ def show_the_letter(chosen_word):
 
 def show_game_over():
     """
-    Asks if a player wants to play again.
+    Asks if the player wants to play again.
     Takes over only when game_over is True
     """
     play_again = input("\n\nWould you like to play again?\n\n")
@@ -198,7 +201,7 @@ def show_game_over():
 
 def main():
     """
-    Runs all program functions
+    Runs some of the program functions
     """
 
     chosen_word = get_word()
