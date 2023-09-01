@@ -16,10 +16,10 @@ print("====================================\n"
       " letters in a word. At the beginning\n"
       " of the game, letters are hidden.\n"
       " Once guessed, they are revealed\n"
-      " in their actual posititons.\n"
-      " Add one letter at a time.\n\n"
-      " 1. You will have 9 attempts\n"
-      " 2. You can play several times\n"
+      " in their actual posititons.\n\n"
+      " 1. Add one letter at a time.\n"
+      " 2. You will have 9 attempts\n"
+      " 3. You can play several times\n"
       "====================================\n")
 
 
