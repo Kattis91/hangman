@@ -1,11 +1,12 @@
+# import random module to make it possible to get a random word from the list
 import random
-
+# import time module to be able to use time delay in the beginning of the game
 import time
-
+# import sys module to be able to end the execution of the program.
 import sys
-
+# import hangman images(stages)
 from hangman import HANGMAN_LEVELS
-
+# import the list with the words
 from words import words
 
 
