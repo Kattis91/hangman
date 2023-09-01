@@ -1,20 +1,24 @@
 # Hangman
 
-Hangman is a Python terminal game, which runs oin the Code Institute mock terminal on Heroku.
+Hangman is a Python terminal game, which runs on the Code Institute mock terminal on Heroku.
 
-Users get a possibility to play a guessing game even if they do not have someone around to play with.
+Players get a possibility to play a guessing game even if they do not have someone around to play with.
+
+The game provides a perfect escape from daily routine while stimulating the mind.
 
 ![image](readme-images/am-i-responsive.jpg)
 
 ## How to play
 
- The player will have a total of nine attempts to correctly guess the word. Guessing multiple letters at once is not possible.If the playes enters a character other than a letter, they will receive an error message.
+A random word is selected from a list by the server. The player is then presented with a row of underscores, one for each letter in the chosen word, and asked to guess a letter. The player will have a total of nine attempts to correctly guess the word. Guessing multiple letters at once is not possible. If the player enters a character other than a letter, en error message will be displayed.
 
- When the player guess a letter, the game shows if it is correct and if it is, reveals its position in the word.
+When the player guesses a letter, the game shows if it is correct, and if it is, the game reveals letter's position in the word.
 
- If a letter is not in the word, a new image of the hangman is displayed, along with the number of attempts remaining.
+If a letter is not in the word, a new image of the hangman is displayed, along with the number of attempts remaining.
 
- It is possible to play the game multiple times.
+The game ends when the player correctly guesses all the letters or runs out of attempts.
+
+It is possible to play the game multiple times.
 
  ## Flowchart
 
@@ -178,7 +182,7 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
  - get information about how many attempts are left, as I guess incorrectly.
  - see the word I was guessing in case I lose the game.
  - start a new game when the current game has ended, regardless of whether I lost or won.
- 
+
 ## Solved Bugs after Deployment:
 
   - When a player started a new round after losing, the letters that were correctly guessed in previous rounds were automatically entered as correctly guessed letters even for the new word. I solved the problem by resetting the list of correctly guessed letters every time a player loses the game.
