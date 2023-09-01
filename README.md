@@ -62,66 +62,64 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 ![image](readme-images/hello-name.jpg)
 
   
- - The player chooses to play:
+- The player chooses to play:
 
-    - ![image](readme-images/ready-to-play.jpg)
+  ![image](readme-images/ready-to-play.jpg)
 
-       The game begins. Some time delay is added for animation feeling.
+  The game begins. Some time delay is added for animation feeling.
 
-  - The player chooses NOT to play:
+- The player chooses NOT to play:
    
-    - ![image](readme-images/not-ready-to-play.jpg)
+  ![image](readme-images/not-ready-to-play.jpg)
 
-      The game welcomes the player to come back another time.
+  The game welcomes the player to come back another time.
   
-  - The player enters something else than 'yes' or 'no':
+- The player enters something else than 'yes' or 'no':
     
-    - ![image](readme-images/neither-yes-or-no.jpg)
+  ![image](readme-images/neither-yes-or-no.jpg)
       
-      An error message appear on the screen asking the player enter either 'yes' or 'no'.
+  An error message appear on the screen asking the player enter either 'yes' or 'no'.
 
  
 ### Enter a letter
 
 ![image](readme-images/enter-a-letter.jpg)
 
-  - This section shows the first hangman image.
+- This section shows the first hangman image.
 
-  - A player gets to see the hidden word.
+- A player gets to see the hidden word.
 
-  - A player gets an opportunity to enter a letter.
+- A player gets an opportunity to enter a letter:
 
-  - Input validation: 
-  
-    - The letter is NOT in the word:
+  - The letter is NOT in the word:
 
-      ![image](readme-images/not-in-the-word.jpg)
+    ![image](readme-images/not-in-the-word.jpg)
 
-       - A player gets a message with the information about that.
+    - A player gets a message with the information about that.
 
-       - Information about how many attempts are left is displayed.
+    - Information about how many attempts are left is displayed.
 
-       - The next hangman image is displayed.
+    - The next hangman image is displayed.
 
-       - A player can guess the next letter as long as the game is still in progress. 
+    - A player can guess the next letter as long as the game is still in progress. 
     
-    - The letter is ALREADY guessed:
+  - The letter IS IN THE WORD:
 
-      ![image](readme-images/already-guessed.jpg)
+    ![image](readme-images/letter-is-in-the-word.jpg)
 
-       - A player gets a message with the information about that.
+    - A player gets a message with the information about that.
 
-       - An opportunity to enter another letter appears on the screen.
+    - The game reveals the guessed letter's position in the word.
 
-    - The letter IS IN THE WORD:
+    - A player can guess the next letter as long as the game is still in progress. 
+    
+  - The letter is ALREADY guessed:
 
-      ![image](readme-images/letter-is-in-the-word.jpg)
+    ![image](readme-images/already-guessed.jpg)
 
-       - A player gets a message with the information about that.
+    - A player gets a message with the information about that.
 
-       - The game reveals the guessed letter's position in the word.
-
-       - A player can guess the next letter as long as the game is still in progress. 
+    - An opportunity to enter another letter appears on the screen.
 
 
 ### The game is finished
