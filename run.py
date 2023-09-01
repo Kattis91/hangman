@@ -16,7 +16,7 @@ print("====================================\n"
       " of the game, letters are hidden.\n"
       " Once guessed, they are revealed\n"
       " in their actual posititons.\n"
-      " Add one letter at time.\n\n"
+      " Add one letter at a time.\n\n"
       " 1. You will have 9 attempts\n"
       " 2. You can play several times\n"
       "====================================\n")
@@ -143,7 +143,6 @@ def validate_data(chosen_word):
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
-                print(f"So far you've guessed following: {already_guessed}\n")
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
                     game_over = True
