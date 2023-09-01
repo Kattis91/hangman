@@ -180,9 +180,19 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
   *I tried to print all the guessed letters but decided to go further without that feature to keep the game less complex (with not too much information printed out) and the terminal a little neater.
   Moreover, players are always informed that the letter has already been guessed.
 
-## User Stories 
+## User Experience
 
-### As a user I want to be able to:
+### Key Project Goal
+
+A lot of people have probably played the hangman game with their friends. But what if you feel like playing when you are alone and need a little break from work, studying, or something else you are busy with? The key project goal with the app is to give that break in everyday life while the brain gets a little exercise. The game is easy to play, and it doesn't take that much time to finish the round.
+
+### Target Audience
+
+The best part is that the game is almost for everyone. You could say it's for kids and families. However, the only criteria that exist to be able to qualify for the target group are to know English and love to guess.
+
+### User Stories 
+
+#### As a user I want to be able to:
 
  - read concise instructions to comprehend the game rules.
  - start a game when I am ready.
