@@ -220,6 +220,7 @@ No errors were found when passing through the official [PEP8 Linter](https://pep
 | Would you like to play again? (YES) | When the player answers "no", the game should display a message saying "Welcome back another time!" | Type "no" into the terminal. | "Welcome back another time!" message displays on the screen. | Pass
 | Would you like to play again? (Neither YES or NO) | When a player enters something other than "yes" or "no", the game should prompt them with a question asking if it was "yes" or "no". The question should continue to be displayed until the player types either "yes" or "no". | Type something into the terminal (something else than "yes" or "no"). | "Was it 'yes' or 'no'?" question appears on the screen. It keeps on displaying until either "yes" or "no" is entered. | Pass
 | Resetting the lists | Regardless of whether the player wins or loses, the list with the correctly guessed words and the list with all guessed words should be cleared. | Print out both lists and see what happens with them when the game is finished. | Both lists gets empty ([]). | Pass
+| strip() and lower() methods | When a player is prompted to enter either "yes" or "no", it should not matter if there are any whitespaces before or after the entries. It should also make no difference if these inputs are lowercase or uppercase. | Enter "yes" and "no" with whitespaces before and after. Enter with both lowercase and uppercase letters. | The game accepts and recognizes all these different inputs. | Pass
    
 ## Credits
 
