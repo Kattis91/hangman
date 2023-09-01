@@ -2,6 +2,8 @@ import random
 
 import time
 
+import sys
+
 from hangman import HANGMAN_LEVELS
 
 from words import words
@@ -51,8 +53,7 @@ def get_player_choice():
     while True:
         if player_choice.lower().strip() == "no":
             print("\nYou are welcome back another time. Have a nice day!")
-            quit()
-            break
+            sys.exit()
         if player_choice.lower().strip() == "yes":
             print("\nLet's go then...\U0001F60E")
             break
@@ -85,8 +86,8 @@ print(HANGMAN_LEVELS[0])
 
 def start_game(chosen_word):
     """
-    Hides the word and shows it with the help of dashes.
-    One dash for each letter in the word
+    Hides the word and shows it with the help of underscores.
+    One underscore for each letter in the word
     """
     hidden_word = ['_' for i in range(len(chosen_word))]
     print(' '.join(hidden_word))
@@ -189,8 +190,7 @@ def show_game_over():
             break
         if play_again.lower().strip() == "no":
             print("\nWelcome back another time!")
-            break
-            exit()
+            sys.exit()
         print("\n\nWas it 'yes' or 'no'?\n\n")
         play_again = input("Would you like to play again?\n\n")
         continue
