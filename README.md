@@ -78,7 +78,7 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
     
   ![image](readme-images/neither-yes-or-no.jpg)
       
-  An error message appear on the screen asking the player enter either 'yes' or 'no'.
+  An error message appears on the screen asking the player to enter either 'yes' or 'no'.
 
  
 ### Enter a letter
@@ -126,48 +126,48 @@ I know it's very early in the game, but what if a user accidentally stumbled upo
 
 #### What occurs when all letters are guessed or no attempts remain?
 
-  - Game over:
+- Game over:
    
-    ![image](readme-images/game-over.jpg)
+  ![image](readme-images/game-over.jpg)
 
-      - "You have 0 attempts left" message is displayed on the screen.
+  - "You have 0 attempts left" message is displayed on the screen.
 
-      - The last hangman image with the GAME OVER print is printed out for the player.
+  - The last hangman image with the GAME OVER print is printed out for the player.
 
-      - The player receives the information about the word that was previously hidden by the underscores.
+  - The player receives the information about the word that was previously hidden by the underscores.
 
-      - The game asks whether the player wants to play again or not.
+  - The game asks whether the player wants to play again or not.
 
-  - A player wins:
+- A player wins:
 
-    ![image](readme-images/game-winner.jpg)
+  ![image](readme-images/game-winner.jpg)
 
-      - Congratulations message is printed out for the player.
+  - Congratulations message is printed out for the player.
 
-      - The game asks whether the player wants to play again or not.
+  - The game asks whether the player wants to play again or not.
 
 
 ### Would you like to play again?
 
-  - YES:
+- YES:
    
-    ![image](readme-images/play-again.jpg)
+  ![image](readme-images/play-again.jpg)
 
-     - A new random word that is currently hidden behind the underscores, appears on the screen.
+  - A new random word that is currently hidden behind the underscores, appears on the screen.
 
-     - A player gets an opportunity to enter a letter.
+  - A player gets an opportunity to enter a letter.
 
-  - NO:
+- NO:
 
-    ![image](readme-images/no-to-play-again.jpg)
+  ![image](readme-images/no-to-play-again.jpg)
 
-    A "Welcome back another time!" message appears on the screen.
+  A "Welcome back another time!" message appears on the screen.
 
-  - Was it YES or NO?
+- Was it YES or NO?
 
-    ![image](readme-images/was-it-yes-or-no.jpg)
+  ![image](readme-images/was-it-yes-or-no.jpg)
   
-    If a player enters something else than 'yes' or 'no', a question repeatedly appears on the screen.
+  If a player enters something else than 'yes' or 'no', a question repeatedly appears on the screen.
 
 ## User Stories 
 
