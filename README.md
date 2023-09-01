@@ -6,6 +6,8 @@ Players get a possibility to play a guessing game even if they do not have someo
 
 The game provides a perfect escape from daily routine while stimulating the mind.
 
+[Here is the live version of my project](https://guessing-game-hangman-19d0059fa2c6.herokuapp.com/).
+
 ![image](readme-images/am-i-responsive.jpg)
 
 ## How to play
