@@ -28,7 +28,7 @@ It is possible to play the game multiple times.
 
  ![image](readme-images/flowchart.jpeg)
 
- ## Features 
+ ## Existing Features 
 
  ### Welcome message
 
