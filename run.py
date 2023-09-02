@@ -126,7 +126,7 @@ def validate_data(chosen_word):
     max_attempts = 9
     game_over = False
 
-    hidden_word = ["_" for i in range(len(chosen_word))]
+    hidden_word = ['_' for i in range(len(chosen_word))]
 
     while not game_over:
         guess = input("\n\nEnter a letter: ").upper()
@@ -144,6 +144,7 @@ def validate_data(chosen_word):
                 already_guessed.append(guess)
                 max_attempts -= 1
                 print(f"\nYou have {max_attempts} attempts left")
+                # -1 because lists have indexes that start with [0]
                 print(HANGMAN_LEVELS[(len(HANGMAN_LEVELS) - 1) - max_attempts])
                 if max_attempts == 0:
                     print(f"The word is {chosen_word}\n")
@@ -204,7 +205,6 @@ def main():
     """
     Runs some of the program functions
     """
-
     chosen_word = get_word()
     start_game(chosen_word)
     validate_data(chosen_word)
